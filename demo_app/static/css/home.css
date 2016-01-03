@@ -7,7 +7,18 @@ body {
 }
 
 .card {
+    margin-top: 5px;
     border: 1px solid #e6e6e6;
     text-align: center;
 }
 
+.btn {
+    border-radius: 0%;
+    background-color: transparent;
+    border: 2px solid #c6c6c6;
+}
+
+.btn:hover {
+    background-color: #c6c6c6;
+    border-color: #a6a6a6;
+}

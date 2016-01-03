@@ -30,14 +30,20 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-2"></div>
-        <div class="col-xs-12 col-sm-8">
-          <!-- No method or action attribute, we'll handle it ourselves using jQuery -->
-          <form role="form" id="command_form">
+        <!-- No method or action attribute, we'll handle it ourselves using jQuery -->
+        <form role="form" id="command_form">
+          <div class="col-xs-6 col-sm-6">
             <div class="form-group">
               <input placeholder="Enter command" type="text" name="command_text" class="form-control" />
             </div>
-          </form>
-        </div>
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <div class="form-group">
+              <input type="button" class="btn" id="record_command" value="Speak" />
+              <input type="submit" class="btn" value="Submit" />
+            </div>
+          </div>
+        </form>
       </div>
     </div>
 
