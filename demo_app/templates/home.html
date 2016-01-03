@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TTCC Demo</title>
+
+    <!-- Bootstrap -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/home.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="static/js/jquery-1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/home.js"></script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"> Demo</a> 
+        </div>
+      </div>
+    </nav>
+
+    <!-- Form to interact with the server -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-xs-12 col-sm-8">
+          <!-- No method or action attribute, we'll handle it ourselves using jQuery -->
+          <form role="form" id="command_form">
+            <div class="form-group">
+              <input placeholder="Enter command" type="text" name="command_text" class="form-control" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Show states of different devices here -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 card">
+            <h3> Refrigerator </h3>
+            <hr />
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 card">
+            <h3> Television </h3>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

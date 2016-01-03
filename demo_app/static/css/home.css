@@ -1,0 +1,13 @@
+body {
+    padding-top: 70px;
+}
+
+.form-control {
+    border-radius: 0%;
+}
+
+.card {
+    border: 1px solid #e6e6e6;
+    text-align: center;
+}
+
