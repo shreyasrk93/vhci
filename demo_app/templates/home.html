@@ -21,31 +21,45 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"> Demo</a> 
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand"> TTCC Demo </div>
         </div>
+
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <!-- <form role="form" class="collapse navbar-collapse navbar-form navbar-right" id="command_form">
+            <div class="form-group">
+              <div class="col-xs-12">
+                <input placeholder="Enter command" type="text" name="command_text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-12">
+                <input type="button" class="btn" id="record_command" value="Speak" />
+                <input type="submit" class="btn" value="Submit" />
+              </div>
+            </div>
+          </form> -->
+          <form class="navbar-form navbar-right" role="form" id="command_form">
+            <div class="form-group">
+              <input type="text" class="form-control" name="command_text" placeholder="Enter command">
+            </div>
+            <div class="form-group">
+              <div class="col-xs-6">
+                <input type="button" class="btn" id="record_command" value="Speak" style="width:100%;" />
+              </div>
+              <div class="col-xs-6">
+                <input type="submit" class="btn" value="Submit" style="width:100%;" />
+              </div>
+            </div>
+          </form>
+        </div>
+
       </div>
     </nav>
-
-    <!-- Form to interact with the server -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <!-- No method or action attribute, we'll handle it ourselves using jQuery -->
-        <form role="form" id="command_form">
-          <div class="col-xs-6 col-sm-6">
-            <div class="form-group">
-              <input placeholder="Enter command" type="text" name="command_text" class="form-control" />
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-4">
-            <div class="form-group">
-              <input type="button" class="btn" id="record_command" value="Speak" />
-              <input type="submit" class="btn" value="Submit" />
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
 
     <!-- Show states of different devices here -->
     <div class="container">

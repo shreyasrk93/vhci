@@ -15,7 +15,8 @@ body {
 .btn {
     border-radius: 0%;
     background-color: transparent;
-    border: 2px solid #c6c6c6;
+    border: 1px solid #c6c6c6;
+    text-align: center;
 }
 
 .btn:hover {
