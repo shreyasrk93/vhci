@@ -4,6 +4,13 @@ body {
 
 .form-control {
     border-radius: 0%;
+    border: 1px solid #E7E7E7;
+    box-shadow: unset;
+}
+
+.form-control:focus {
+    box-shadow: unset;
+    border-color: #D0D0D0;
 }
 
 @media(max-width:768px) {
@@ -14,20 +21,20 @@ body {
 
 .card {
     margin-top: 15px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #E7E7E7;
     text-align: center;
 }
 
 .btn {
     border-radius: 0%;
     background-color: transparent;
-    border: 1px solid #c6c6c6;
+    border: 1px solid #E7E7E7;
     text-align: center;
 }
 
 .btn:hover {
-    background-color: #c6c6c6;
-    border-color: #a6a6a6;
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
 }
 
 .table {

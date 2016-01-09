@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <form role="form" id="command_form">
+      <div class="form-group">
+        <div class="col-xs-12 col-sm-8">
+          <input type="text" class="form-control" name="command_text" placeholder="Enter command" />
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <input type="button" class="form-control btn command_button" value="Speak" style="width:100%;" ng-click="VFController.record()" />
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <input type="submit" class="form-control btn command_button" value="Submit" style="width:100%;" ng-click="VFController.submit()" />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
