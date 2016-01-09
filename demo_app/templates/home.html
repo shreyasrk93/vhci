@@ -30,50 +30,175 @@
         </div>
 
         <div class="navbar-collapse collapse" id="navbar-main">
-          <!-- <form role="form" class="collapse navbar-collapse navbar-form navbar-right" id="command_form">
-            <div class="form-group">
-              <div class="col-xs-12">
-                <input placeholder="Enter command" type="text" name="command_text" class="form-control" />
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-xs-12">
-                <input type="button" class="btn" id="record_command" value="Speak" />
-                <input type="submit" class="btn" value="Submit" />
-              </div>
-            </div>
-          </form> -->
-          <form class="navbar-form navbar-right" role="form" id="command_form">
-            <div class="form-group">
-              <input type="text" class="form-control" name="command_text" placeholder="Enter command">
-            </div>
-            <div class="form-group">
-              <div class="col-xs-6">
-                <input type="button" class="btn" id="record_command" value="Speak" style="width:100%;" />
-              </div>
-              <div class="col-xs-6">
-                <input type="submit" class="btn" value="Submit" style="width:100%;" />
-              </div>
-            </div>
-          </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="show_states">
+            <a href="">States</a>
+          </li>
+          <li id="show_commands">
+            <a href="">Commands</a>
+          </li>
+        </ul>
         </div>
-
       </div>
     </nav>
+
+    <div class="container">
+      <div class="row">
+        <form role="form" id="command_form">
+          <div class="form-group">
+            <div class="col-xs-12 col-sm-8">
+              <input type="text" class="form-control" name="command_text" placeholder="Enter command" />
+            </div>
+            <div class="col-xs-6 col-sm-2">
+              <input type="button" class="form-control btn command_button" id="record_command" value="Speak" style="width:100%;" />
+            </div>
+            <div class="col-xs-6 col-sm-2">
+              <input type="submit" class="form-control btn command_button" value="Submit" style="width:100%;" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <!-- Show states of different devices here -->
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-4">
           <div class="col-xs-12 card">
             <h3> Refrigerator </h3>
             <hr />
+            <div class="device_state">
+              <h3> Current state </h3>
+            </div>
+            <div class="available_operations">
+              <h3> Available operations </h3>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th> Operation </th>
+                    <th> Arguments </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> Set temperature </td>
+                    <td> Target temperature </td>
+                  </tr>
+                  <tr>
+                    <td> Query temperature </td>
+                    <td> None </td>
+                  </tr>
+                  <tr>
+                    <td> Query contents </td>
+                    <td> Required items </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-4">
           <div class="col-xs-12 card">
             <h3> Television </h3>
             <hr />
+            <div class="device_state">
+              <h3> Current state </h3>
+            </div>
+            <div class="available_operations">
+              <h3> Available operations </h3>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th> Operation </th>
+                    <th> Arguments </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> Set volume </td>
+                    <td> Target volume </td>
+                  </tr>
+                  <tr>
+                    <td> Increase volume </td>
+                    <td> Number </td>
+                  </tr>
+                  <tr>
+                    <td> Decrease volume </td>
+                    <td> Number </td>
+                  </tr>
+                  <tr>
+                    <td> Mute </td>
+                    <td> None </td>
+                  </tr>
+                  <tr>
+                    <td> Unmute </td>
+                    <td> None </td>
+                  </tr>
+                  <tr>
+                    <td> Set channel </td>
+                    <td> Target channel </td>
+                  </tr>
+                  <tr>
+                    <td> Next channel </td>
+                    <td> None </td>
+                  </tr>
+                  <tr>
+                    <td> Previous channel </td>
+                    <td> None </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="col-xs-12 card">
+            <h3> Phone </h3>
+            <hr />
+            <div class="device_state">
+              <h3> Current state </h3>
+            </div>
+            <div class="available_operations">
+              <h3>Available operations</h3>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th> Operation </th>
+                    <th> Arguments </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> Call </td>
+                    <td> Person </td>
+                  </tr>
+                  <tr>
+                    <td> Play song </td>
+                    <td> Song </td>
+                  </tr>
+                  <tr>
+                    <td> Start application </td>
+                    <td> Application name </td>
+                  </tr>
+                  <tr>
+                    <td> Silent mode </td>
+                    <td> None </td>
+                  </tr>
+                  <tr>
+                    <td> Normal mode </td>
+                    <td> None </td>
+                  </tr>
+                  <tr>
+                    <td> Accept call </td>
+                    <td> None </td>
+                  </tr>
+                  <tr>
+                    <td> Reject call </td>
+                    <td> None </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

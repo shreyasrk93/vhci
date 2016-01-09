@@ -1,13 +1,19 @@
 body {
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .form-control {
     border-radius: 0%;
 }
 
+@media(max-width:768px) {
+    .command_button {
+        margin-top: 5px;
+    }
+}
+
 .card {
-    margin-top: 5px;
+    margin-top: 15px;
     border: 1px solid #e6e6e6;
     text-align: center;
 }
@@ -22,4 +28,8 @@ body {
 .btn:hover {
     background-color: #c6c6c6;
     border-color: #a6a6a6;
+}
+
+.table {
+    text-align: left !important;
 }
